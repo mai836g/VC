@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <!--Título pestaña inicio-->
+    <title>Contacto</title>
+
+    <!--icono de la pestaña-->
+    <link rel="icon" type="image/x-icon" href="icono_cv.png">
+    
+    <!--llamamos al archivo css-->
+    <link rel="stylesheet" type="text/css" href="CSS/estilo.css" />
+    
+    <!--letra nombre-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@100&family=Roboto:wght@100&family=Satisfy&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   <!--cabecera-->
+   <header>
+            
+    <nav id="menu">
+        <ul>
+            <li><a id="logo" href="Index.html">Maiten M. González Markocich</a></li>
+            <li><a href="Quien_soy.html">Información personal</a></li>
+            <li><a href="Educacion.html">Educación</a></li>
+            <li><a href="Situacion_actual.html">Experiencia Laboral</a>
+                <ul>
+                    <li><a href="Situacion_actual.html">Situación laboral actual</a></li>
+                    <li><a href="Otras_experiencias.html.html">Situaciones anteriores</a></li>
+                </ul>
+            </li>
+            <li><a href="Aptitudes.html">Aptitudes</a></li>
+            <li><a href="Adicionales.html">Cursos Adicionales</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    
+    <section>
+        
+        <article>
+            <h1>Contacto</h1>
+            <p>Dirección: Misiones 286, dpto. 1, Paraná, 3100. Entre Ríos</p>
+            <p>Celular: 0343-154061051</p>
+            <p>Mails:</p>
+            <p>maitenmgonzalez@outlook.com / maitenmgonzalez@gmail.com</p>
+            <a id="logo" href="CV.pdf" download="Curriculum_Vitae_Maitén_Gonzalez">Descargar curriculum en PDF</a>
+            
+        
+        </article>
+        <article>
+            
+            <!--El formulario usara la pagina emailjs para envisrme las cosas-->
+            <form id="formulario">
+                <div class="cont">
+                  <h1>Enviar mensaje</h1>
+                  <ul>
+                    <li>
+                        <div class="grid grid-2">
+                            <input type="text" placeholder="Nombre" name="Nombre" id="Nombre" required>  
+                            <input type="text" placeholder="Apellido" name="Apellido" id="Apellido"required>
+                        </div>
+                    </li>    
+                    <li>
+                        <div class="grid grid-2">
+                            <input type="email" placeholder="Email" name="Email" id="Email" required>  
+                            <input type="tel" placeholder="Telefono" name="Telefono" id="Telefono">
+                        </div>
+                    </li>    
+                    <li>
+                        <textarea placeholder="Mensaje" name="Message" id="Message"></textarea>
+                    </li>    
+                    <li>
+                        <div class="grid grid-3">
+                            <div class="required-msg">Requeridos</div>
+                            <input type="submit" id="button" value="Enviar" >
+                            <input type="reset" id="button" value="Resetear" >
+                          </div>
+                    </li>   
+                  </ul>
+                </div>
+              </form>
+
+
+              <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+            
+            <script type="text/javascript">
+              emailjs.init('fARxa7cJ7oJKxssOG')
+            </script>
+
+            <script scr="JS/java.js"></script>
+
+        </article>
+
+    </section>
+
+    
+
+
+</body>
+</html>

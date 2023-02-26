@@ -1,0 +1,176 @@
+body {
+    background-color:black 
+	
+}
+
+
+/*INFORMACION*/
+
+section{
+    display: -webkit-flex;
+    display: flex;
+	width:100%;
+}
+
+
+#mi_foto{
+    float: left;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    
+}
+
+#mi_foto2{
+    float: left;
+    width: 350px;
+    height: 450px;
+    padding: 20px;
+    
+}
+
+#mi_foto3{
+    float: left;
+    width: 450px;
+    height: 400px;
+    padding: 20px;
+    
+}
+
+article{
+    float: left;
+    padding: 20px;
+    width: 70%;
+    height:300px;
+}
+
+h1 {
+    font-family: 'Satisfy', cursive;
+    color: rgb(8, 114, 61);
+    text-align: center; 
+    font-size:40px;
+}
+
+section::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size:20px;
+    width: 95%;
+    text-align: justify;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(31, 126, 79);
+    text-align:left; 
+    font-size:20px;
+}
+
+.cadaexperiencia {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(31, 126, 79);
+    text-align:left; 
+    font-size:17px;
+}
+
+
+.desarrolloexperiencia {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size:17px;
+    width: 95%;
+    text-align: justify;
+}
+
+
+/*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
+
+/* menu */
+
+
+#menu #logo {
+    font-family: 'Satisfy', cursive;
+	color:#f2f2f2;
+	font-size:26px;
+	margin:20px 0px 20px 0px;
+    padding:10px;
+}
+
+#menu ul {
+    list-style:none;
+    padding:0;
+   }
+   
+   /* items del menu */
+   
+   #menu ul li {
+	background:#2f4b3e;
+   }
+   
+   /* enlaces del menu */
+   
+   #menu ul a {
+    display:inline-block;
+    color:#fff;
+    text-decoration:none;
+    line-height:normal;
+    font-weight:530;
+    font-size:18px;
+    padding:18px;
+    letter-spacing:1px;
+    margin:20px 0px 20px 0px;
+   }
+
+
+   
+   /* items del menu */
+   
+   #menu ul li {
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+   }
+   
+   /* efecto al pasar el ratón por los items del menu */
+   
+   #menu ul li:hover {
+    background:#f56f3a;
+   }
+
+   /* menu desplegable */
+
+#menu ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#2f4b3e;
+    padding:0;
+   }
+   
+   /* items del menu desplegable */
+   
+   #menu ul ul li {
+    float:none;
+    width:150px
+   }
+   
+   /* enlaces de los items del menu desplegable */
+   
+   #menu ul ul a {
+    line-height:120%;
+    padding:10px 15px;
+   }
+   
+   /* items del menu desplegable al pasar el ratón */
+   
+   #menu ul li:hover > ul {
+    display:block;
+   }
